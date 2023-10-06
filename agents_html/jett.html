@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Jett | Wiki</title>
+        <style>
+            body{
+                margin: 0%;
+                padding: 0%;
+            }
+            .navbar{
+                margin-top: 0%;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                padding: 0px 70px;
+                position: relative; 
+                background-color: white;
+
+            }   
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                overflow: hidden;
+            }
+            ul:hover {
+                overflow: visible;
+            }
+            li {
+                position: relative;
+                float: left;
+                background-color: transparent;
+                padding: 10px 20px;
+            }
+            li:hover {
+                background-color: tomato;
+            }
+            a {
+                font-family: 'Montserrat', sans-serif;
+                display: block;
+                padding: 10px 20px;
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            a:hover{
+                padding: 10px 20px;
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            /* second level */
+            ul ul {
+                max-height: 0;
+                transition: max-height 1s;
+            }
+            ul li:hover ul {
+                max-height: 999px;
+
+            }
+            ul ul li {
+                float: none;
+                background-color: transparent;
+            }
+            ul ul li:hover {
+                background-color: tomato;
+            }
+
+            /* third level */
+            ul ul ul {
+                position: absolute;
+                width: 0;
+                top: 0;
+                left: 100%;
+                transition: width 0.5s;
+            }
+            ul ul li:hover ul {
+                width: 100%;
+                z-index: 1;
+            }
+            ul ul ul li {
+                background-color: white
+            }
+            ul ul ul li:hover {
+                background-color: tomato
+            }
+
+            .valoinfo {
+                position: relative; 
+                height: 100%;
+                width: 100%;
+                display:inline-flex;
+                align-items: center;
+                justify-content: left;
+                background-image: url('../assets/agentsinfo.png');
+                background-size: cover;
+            }
+            .valoinfo::before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                opacity: 0.75;
+            }
+
+            .box{
+                margin-bottom: 0%;
+                padding-top: 13%;
+                display: inline-flex;
+                position: relative;
+                height: 70vh;
+            }
+            .box::before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                opacity: 0.75;
+            }
+            .text{
+                padding-top: 8%;
+                padding-left: 80px;
+                padding-right: 150px;
+                text-align: justify;
+                text-indent: 100px;
+                position:relative;
+                font-size: 16px;
+                color: transparent;
+                transition: 0.5s ease-out;
+            }
+            
+            
+            .image{
+                
+                padding-left:70%;
+                width: max-content;
+                height: max-content;
+                transition: 0.5s ease-out;
+            }
+
+            .valoinfo:hover .image{
+                transition: 1s ease;
+                padding-left: 15%;
+            }
+            .valoinfo:hover .text{
+                transition: 1s ease;
+                color: white;
+                float: left;
+                padding-top: 0%;
+                padding-left: 80px;
+                padding-right: 150px;
+            }
+            
+        </style>
+    </head>
+
+    <body style="margin:0%;padding: 0%;">
+        <div class="navbar">
+            <ul>
+                <li><a href="../home.html"><img src="../assets/home-icon.png" style="padding-right: 10px;">Home</a>
+                    <ul>
+                        <li><a href="../maps_html/maps.html" style="z-index: 1;">Maps ></a>
+                            <ul>
+                                <li><a href="../maps_html/bind.html">Bind</a></li>
+                                <li><a href="../maps_html/haven.html">Haven</a></li>
+                                <li><a href="../maps_html/split.html">Split</a></li>
+                                <li><a href="../maps_html/ascent.html">Ascent</a></li>
+                                <li><a href="../maps_html/lotus.html">Lotus</a></li>
+                                <li><a href="../maps_html/icebox.html">Icebox</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <li><a href="#"><img src="../assets/agent-icon.png" style="padding-right: 10px;">Agents</a>
+                  <ul>
+                    <li><a href="../agents_html/duelist.html">Duelist ></a>
+                        <ul>
+                            <li><a href="../agents_html/jett.html">Jett</a></li>
+                            <li><a href="../agents_html/neon.html">Neon</a></li>
+                            <li><a href="../agents_html/phoenix.html">Phoenix</a></li>
+                            <li><a href="../agents_html/raze.html">Raze</a></li>
+                            <li><a href="../agents_html/reyna.html">Reyna</a></li>
+                            <li><a href="../agents_html/yoru.html">Yoru</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../agents_html/sentinel.html">Sentinel ></a>
+                        <ul>
+                            <li><a href="../agents_html/chamber.html">Chamber</a></li>
+                            <li><a href="../agents_html/cypher.html">Cypher</a></li>
+                            <li><a href="../agents_html/killjoy.html">Killjoy</a></li>
+                            <li><a href="../agents_html/sage.html">Sage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../agents_html/initiator.html">Initiator ></a>
+                    <ul>
+                        <li><a href="../agents_html/breach.html">Breach</a></li>
+                        <li><a href="../agents_html/fade.html">Fade</a></li>
+                        <li><a href="../agents_html/gekko.html">Gekko</a></li>
+                        <li><a href="../agents_html/kayo.html">KAY/O</a></li>
+                        <li><a href="../agents_html/skye.html">Skye</a></li>
+                        <li><a href="../agents_html/sova.html">Sova</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="../agents_html/controller.html">Controller ></a>
+                        <ul>
+                            <li><a href="../agents_html/astra.html">Astra</a></li>
+                            <li><a href="../agents_html/brimstone.html">Brimstone</a></li>
+                            <li><a href="../agents_html/harbor.html">Harbor</a></li>
+                            <li><a href="../agents_html/omen.html">Omen</a></li>
+                            <li><a href="../agents_html/viper.html">Viper</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+
+                <li><a href="#"><img src="../assets/gallery-icon.png" style="padding-right: 10px;">Gallery</a>
+                    <ul>
+                        <li><a href="../gallery_html/images.html">Images</a></li>
+                        <li><a href="../gallery_html/videos.html">Video Clips</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="../assets/about-us-icon.png" style="padding-right: 10px;">Contacts</a>
+                    <ul>
+                        <li><a href="../about-us_html/contacts.html">Email</a></li>
+                        <li><a href="">Socials ></a>
+                            <ul>
+                                <li><div style="display: inline-flex;"><div><img src="../assets/Facebook.png" style="padding-top: 10px;"></div><div><a href="https://www.facebook.com/lathhhwel">Facebook</a></div></div></li>
+                                <li><div style="display: inline-flex;"><div><img src="../assets/Instagram.png" style="padding-top: 10px;"></div><div><a href="https://www.instagram.com/ntlathrell/">Instagram</a></div></div></li>
+                                <li><div style="display: inline-flex;"><div><img src="../assets/Twitter.png" style="padding-top: 10px;"></div><div><a href="https://twitter.com/lathhhwel">Twitter</a></div></div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+              </ul>
+        </div>
+
+        <div class="valoinfo">
+            <div class="box"><center><img src="../assets/Jett.png" class="image"></center>
+                <div class="text"><h2>Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <center><h1 style="font-size: 70px; font-family: 'Montserrat', sans-serif;letter-spacing: 3px;">JETT</h1></center>
+                </div>
+
+            
+        </div>
+        
+    </body>
+</html>
